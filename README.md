@@ -36,6 +36,8 @@ sudo apt install ros-<distro>-tf2-ros ros-<distro>-sensor-msgs ros-<distro>-visu
 3. **启动节点**  
    ```bash
    rosrun <your_package_name> dbscan_clustering.py
+   # 简单粗暴
+   python3 dbscan_clustering.py
    ```
 
 ## 主要参数
