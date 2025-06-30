@@ -126,7 +126,7 @@ class PointCloudClusteringNode:
         self.min_cluster_size = rospy.get_param('~min_cluster_size', 15)  # 
         
         # 点云预处理参数
-        self.voxel_size = rospy.get_param('~voxel_size', 0.08)  # 增大体素大小
+        self.voxel_size = rospy.get_param('~voxel_size', 0.08)  
         self.z_min = rospy.get_param('~z_min', -0.8)
         self.z_max = rospy.get_param('~z_max', 1.5)
         self.radius_filter = rospy.get_param('~radius_filter', 5.0)
