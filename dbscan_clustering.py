@@ -120,10 +120,10 @@ class PointCloudClusteringNode:
         rospy.init_node('pointcloud_clustering_node', anonymous=True)
         
         # 聚类参数
-        self.eps = rospy.get_param('~eps', 0.4)  # 增大eps提高稳定性
-        self.min_points = rospy.get_param('~min_points', 8)  # 减小min_points
+        self.eps = rospy.get_param('~eps', 0.4)  
+        self.min_points = rospy.get_param('~min_points', 8)  
         self.max_points = rospy.get_param('~max_points', 1000)
-        self.min_cluster_size = rospy.get_param('~min_cluster_size', 15)  # 减小最小聚类大小
+        self.min_cluster_size = rospy.get_param('~min_cluster_size', 15)  # 
         
         # 点云预处理参数
         self.voxel_size = rospy.get_param('~voxel_size', 0.08)  # 增大体素大小
